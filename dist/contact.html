@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <!-- bootstrap CDN -->
+       
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- font awsome CDN -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- javascript trigger color change when theme icon is clicked: blue, red, purple or brown -->
+    <link rel="stylesheet" id="theme-style" href="blue.css">
+
+    <title>Vegan Restaurant|Contact</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav_color">
+      <a class="navbar-brand" href="#"><img src="images/veganLogo-1.png" alt="branding-logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto mt-lg-0">
+          <li class="nav-item pr-lg-5 pr-sm-0">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+                <li class="nav-item pr-lg-5 pr-sm-0">
+                  <a class="nav-link" href="index.html#target-link">About Us</a>
+                </li>
+                <li class="nav-item active text-uppercase pr-lg-5 pr-sm-0">
+                  <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pr-lg-5 pr-sm-0">
+                  <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item pr-lg-5 pr-sm-0">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        
+        <div class="container-fluid">
+          <div class="form-bgImg-1 rounded-lg">            
+            <form action="POST" method="GET" class="needs-validation form-wrapper ml-0 mt-5 col-lg-8 ">     
+              <fieldset class="form-group ml-5 mr-5 "> 
+                <legend>Contact Us</legend>
+                
+                <div class="form-group">                    
+                  <label for="validationCustom01" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Your name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                
+                <div class="form-group">                    
+                  <label for="validationCustom02" class="form-label">Contact Number</label>
+                  <input type="tel" class="form-control" id="validationCustom02" pattern="[0-9]{8}" placeholder="12345678" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="validationCustom03" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="validationCustom03" aria-describedby="emailHelp" placeholder="name@example.com" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div> 
+                
+                <div class="form-group">
+                  <label for="validationCustom04" class="form-label" >Subject</label>
+                  <input type="text" id="validationCustom04" class="form-control" name="subject" value="" placeholder="📜 Your subject matter" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="valdiationCustom05" class="form-label">Leave your message below</label>
+                  <textarea name="valdiationCustom05" id="valdiationCustom05" class="form-control" placeholder="👉🏼 Type your msg here!" rows="6" required></textarea><br>
+                  </div> 
+                  
+                  <label for="valdiationCustom07" class="form-check-label mb-2"> How would you like to be contacted?</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="valdiationCustom07" required>
+                    <label class="form-check-label">
+                      ☎ By Phone
+                    </label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" required>
+                    <label class="form-check-label">
+                      📧 By Email
+                    </label>
+                  </div>
+                  
+                  <div class="form-group mt-4">
+                    <label class="form-check-label d-block mb-2" for="valdiationCustom06">
+                      How did you hear about us? 
+                    </label>
+                    <select class="form-select" id="valdiationCustom06" aria-label="Default select example">
+                      <option selected>Choose...</option>
+                      <option value="1">Google</option>
+                      <option value="2">Friend</option>
+                      <option value="3">Advert</option>
+                      <option value="4">Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <!-- <div class="d-grid gap-2 d-md-block"> -->
+                  <div class="col-auto d-grid d-sm-block">  
+                      <button value="submit" class="btn btn-dark mt-4 mb-4 mr-2" onclick="return formValidate()">
+                        <i class="fas fa-arrow-circle-right"></i>
+                        Submit
+                        </button> 
+                        <button value ="reset" class="btn btn-dark mt-4 mb-4" id="btn-reset" onclick ="return resetForm()">
+                          <i class="font-weight-lighter fas fa-redo"></i>
+                          Reset
+                        </button>
+                   </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+             
+          <div class="row mt-5 rounded-lg" id="map-wrapper">
+              <div class="col-lg-4 col-md-6">
+                <div class="map-cellphone-img mt-4 mb-5"></div>
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="map"></div>
+              </div>
+          </div>
+        
+        <div class="address mt-5 text-center">
+          <div class="address-logo">
+              <img class="mx-auto" src="images/veganLogo-bottom.png" alt="vegan logo">
+          </div>
+          <p class="mt-3">(+65)60808090</p>
+          <p>Vegan_Reserved@outlook.com</p>
+          <p>Vegan restaurant | 61 Kaki Bukit Avenue 1, #01-88 S(417943)</p>
+        </div>
+<!--footer, social media icon with link to the page-->
+    <footer class="footer-section">
+      <div class="footer-container pt-4 pb-4 text-center">
+          <a href="https://www.facebook.com/" target="_blank" class="mr-3 pb-5"><i class="social-icon fab fa-facebook-f fa-2x"></i></a>      
+          <a href="https://twitter.com/login?lang=en" target="_blank" class="mr-3 pb-5"><i class="social-icon fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.instagram.com/accounts/login/?" target="_blank" class="mr-3 pb-5"><i class="social-icon fab fa-instagram fa-2x"></i></a>
+          <a href="https://mail.google.com/" target="_blank"><i class="social-icon fas fa-envelope fa-2x"></i></a>
+        <p>© Copyright 2021. All Right Reserved</p>
+      </div>
+    </footer>         
+      
+<!-- bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<!--JQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Javascript file -->
+    <!-- js is need for theme color also -->
+    <script src="formValidate.js"></script> 
+     
+</body>
+</html>
