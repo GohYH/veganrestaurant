@@ -1,14 +1,21 @@
 {
-  "name": "foodtheme_bootstrap",
+  "name": "foodtheme_bootstrap_github",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GohYH/veganrestaurant.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GohYH/veganrestaurant/issues"
+  },
   "homepage": "https://GohYH.github.io/veganrestaurant",
   "dependencies": {
     "gh-pages": "^3.1.0"

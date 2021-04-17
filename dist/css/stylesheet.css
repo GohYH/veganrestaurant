@@ -1,7 +1,3 @@
-
-
-
-
 /* ------------global setting----------- */
 
 :root{
@@ -119,7 +115,7 @@ background-color: #a52a2a;
 
 /* --------------showcase -------------- */
 .showcase-img{   
-    background-image: url("images/showcase_LandingPg.jpg");
+    background-image: url("../images/showcase_LandingPg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +158,7 @@ background-color: #a52a2a;
 /* .openHrs-container */
 
 .openHr-bgImg-1{
- background-image: url("images/OpeningHour-1.jpg");
+ background-image: url("../images/OpeningHour-1.jpg");
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
@@ -308,7 +304,7 @@ h3.delivery-header{
 
 .form-bgImg-1{
  
-    background-image: url("images/opinionMatter_words-1.jpg");
+    background-image: url("../images/opinionMatter_words-1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -339,7 +335,7 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
     min-height: 580px;   
 }
 .map{
-    background-image: url("images/Map.jpg");
+    background-image: url("../images/Map.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -348,7 +344,7 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
 }
 
 .map-cellphone-img{
-    background-image:url("images/Screenshot 2020-11-10 211034.jpg");
+    background-image:url("../images/Screenshot 2020-11-10 211034.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position:top;      
@@ -400,7 +396,7 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
     transform:rotate(-4deg);   
 }
 .review-bg{
-    background-image: url("images/reviewpg-BG.jpg");
+    background-image: url("../images/reviewpg-BG.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -422,7 +418,7 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
 
 
 .gallery-img{
-    background-image: url("images/gallery-header-1.jpg");
+    background-image: url("../images/gallery-header-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 

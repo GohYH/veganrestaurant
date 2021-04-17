@@ -1,16 +1,3 @@
-
-
-
-
-// ------------------------------------------------bootstrap form javascript end
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-
-// may not need to check again 14 Jan 2021
-
-// ------------------------------------------------bootstrap form javascript end
-
-
- 
 //----------------------- reset form when reset button is pressed-----------
 
 function resetForm(){
@@ -68,22 +55,22 @@ let themeDot = document.getElementsByClassName("theme-dot");
 
         if(mode == "blue"){
            var el = document.getElementById("theme-style")
-           el.setAttribute("href", "blue.css");   
+           el.setAttribute("href", "css/blue.css");   
       }
         
         if(mode == "red"){
            var el = document.getElementById("theme-style")
-           el.setAttribute("href", "red.css");
+           el.setAttribute("href", "css/red.css");
         }
 
         if(mode == "purple"){
             var el = document.getElementById("theme-style")
-            el.setAttribute("href", "purple.css");
+            el.setAttribute("href", "css/purple.css");
 
         }
         if (mode == "brown"){
             var el = document.getElementById("theme-style")
-            el.setAttribute("href", "brown.css");
+            el.setAttribute("href", "css/brown.css");
         }
         // set the item in local storage so the same setting get loaded when user revisit the html page
         localStorage.setItem('theme', mode);
