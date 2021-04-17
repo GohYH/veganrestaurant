@@ -1,0 +1,29 @@
+
+
+/* Purple Color Theme */
+:root{
+  /*color theme hover change color */
+  --themeDotBorder: #24292e;
+  
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+  /* --formBottom: red; */
+  --formBottom: #0d4c0d;
+
+  /* --primary-color: #ff4c68; */
+  /* --primary-color:#0c4c0c; */
+  --primary-color: #800080;
+  --highlight-color: #008000;
+
+  /* --bgColor: #4cffe3;  */
+  --bgColor:#ffe2ff;
+  
+  --base-color: #fff6ff;
+  
+  --gradient-color: linear-gradient(to right, #800080, #8e008e, #9d009d, #ac00ac, #bb00bb);
+
+  /* color description : Grayish red. */
+  --button-hover:#b3989c;
+  --text-Shadow:1px 1px 3px #666;
+  
+}

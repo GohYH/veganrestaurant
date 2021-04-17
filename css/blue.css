@@ -1,0 +1,34 @@
+
+:root{
+
+    /*color theme hover change color */
+    --themeDotBorder: #24292e;
+    
+    --shadow: 0 1px 5px rgba(128, 128, 128, 0.8);
+    /* --shadow: 2px 2px 5px #55d9d4; */
+    /* -1px -1px 5px #6bffff; */
+
+    /* --formBottom: red; */
+    --formBottom: #0d4c0d;
+
+    /* --primary-color: #ff4c68; */
+    /* --primary-color:#0c4c0c; */
+    --primary-color:#6066f4;
+    --highlight-color: #f4ee60;
+    
+
+    /* --bgColor: #4cffe3;  */
+    --bgColor:#f3fefe;
+    
+
+    /* --base-color:#f4a460; */
+    /* --base-color: #fef8f3; */
+    --base-color: #e0e2fd;
+    
+    /* background-image:  */
+    --gradient-color:linear-gradient(to right, #6066f4, #8a71f6, #aa7df9, #c68bfc, #de9aff);;
+   
+    --button-hover:#f4a460;
+    --text-Shadow:1px 1px 3px #666;
+    
+ }

@@ -1,0 +1,747 @@
+/* ------------global setting----------- */
+
+:root{
+
+    --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+    --formBottom: red;
+    --primary-color: #ff4c68;
+    /* color description : Light cyan: greenish-blue */
+    --bgColor: #4cffe3; 
+    --base-color:#aefff2;
+    /* Previous card bgColor:#4cffe3 */
+    /* New card bgColor: #aefff2 */
+    
+    /* color description : Grayish red. */
+    --button-hover:#b3989c;
+    --text-Shadow:1px 1px 3px #666;
+    
+/*background-image: linear-gradient(to bottom, #ff4c68, #f28938, #c8bc41, #8fe388, #4cffe3);*/
+    
+}
+
+h1, h2, h3, h4, h5, p{
+    font-family: 'ubuntu', sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+/* to sit full-width in container so when it skew wif diff viewport */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.btn{
+    font-family: monserrate;
+    font-weight: bolder;
+}
+
+body{
+    margin-left: 5%;
+    margin-right:5%;
+
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif, Helvetica;
+    font-size: 16px;
+    /* max-width: 1024px;  */
+    width: 80%;
+    background-color:var(--bgColor); 
+    box-shadow: var(--shadow); 
+     /* box-sizing: border-box; */
+}
+
+
+.container-fluid{
+/*   
+    margin-left: 5%;
+    margin-right:5%; */
+    padding-left: 5%;
+    padding-right: 5%;  
+
+}
+
+/* -------------------color theme for HTML content page------------------------ */
+
+#blue-mode{
+    background-color:#6066f4;
+}
+
+#red-mode{
+    background-color:#ff4c68;
+}
+
+#purple-mode{
+    background-color:#800080;
+} 
+
+#brown-mode{
+background-color: #a52a2a;
+}
+
+
+.theme-dot{
+    width: 30px;
+    height: 30px;
+ 
+    background-color: black;
+
+    -webkit-box-shadow: 14px 15px 18px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 14px 15px 18px -10px rgba(0,0,0,0.57);
+    box-shadow: 14px 15px 18px -10px rgba(0,0,0,0.57);
+
+    cursor:pointer;
+    border: 2px solid var(--themeDotBorder);
+}
+
+.theme-dot:hover{
+    border-width: 5px;
+}
+
+#setting-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+/* -------------------color theme------END------------------ */
+
+/* -----------------navigation------------------------ */
+
+/*current HTML page setting */
+/* backgroundColor of navbar */
+.nav_color{
+    background-color: var(--primary-color);
+
+}
+
+/* --------------showcase -------------- */
+.showcase-img{   
+    background-image: url("../images/showcase_LandingPg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    width: 100%;
+    opacity: 0.95;
+    box-shadow: var(--shadow);
+}
+
+/* set img to relative, then textcontent absolute to shift textcontent position */
+.showcase-textContent{
+    position: relative;
+    top: 120px;
+    left: 30px;
+} 
+
+
+/* ---------------------------About us------------------ */
+
+.review-content{
+    min-height: 22em;
+    line-height: 1.2;
+}
+.review-content h2{
+    font-size: 2em;
+    color:var(--primary-color);
+    font-family: monserrate;  
+}
+
+.review-content p{
+    color: #000;
+    font-family: monserrate;
+    font-weight: bold;
+    font-size:1em;
+}
+
+
+
+/* --------------------Open Hours/------------------------------------------------- */
+/* .openHrs-container */
+
+.openHr-bgImg-1{
+ background-image: url("../images/OpeningHour-1.jpg");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ min-height: 465px;
+ 
+} 
+
+.openHr-container{
+    background-color: var(--base-color);
+    box-shadow: var(--shadow);
+    width: 48%;
+/* make content cover the pic */
+    min-height:29em;
+    opacity: 0.8;
+}
+
+
+/* ------(delivery) Section-----------Home Page(Index)-------------------------- */
+.delivery-header{
+opacity: 0.8;
+}
+
+h3.delivery-header{
+    color: var(--primary-color);
+   color: var(--base-color);
+   background:var(--primary-color);
+   text-shadow: 1px 1px 4px#000;
+   box-shadow: var(--shadow);
+}
+
+.card-i-img{
+/* both card img will appear same height */
+    min-height: 20em; 
+}
+
+
+/* ------------delivery content area----------------- */
+.delivery-blockquote{
+    width:100%;
+    border: 1px outset var(--primary-color);
+    background-color: var(--base-color);
+    opacity: 0.6;
+    word-spacing: 0.8em;
+}
+/* ------------delivery order area----------------- */
+
+.delivery-order h3{
+    font-family: monserrat;
+    color:var(--primary-color);
+    font-size:1.8em;
+}
+
+.delivery-order h4{
+    color:#000;
+}
+
+.delivery-order p{
+    color:#000;
+    font-family: monserrat;
+    font-size: 1rem;
+}
+/* -----------------end */
+
+.delivery-payment-top{
+    min-height:20em;
+}
+
+
+/* ---delivery content & delivery payment container--------------Font awsome-- */
+.fa-map-marker-alt, .fa-shopping-bag, .fa-mobile-alt,.fa-whatsapp, .fa-apple-pay, .fa-check-circle {
+   
+    color:var(--primary-color);  /* font awsome color  */
+
+}
+/* free delivery islandwide-----------Font awsome----header------- */
+.delivery-content{
+    min-height: 18em;
+}
+.delivery-content h2{
+    color:#000;
+    word-spacing: 0.3em;  
+}
+
+.delivery-payment h5{
+    color:#000;
+    word-spacing: 0.5em;
+    /* the only diff from delivery-content is text-align */
+    /* text-align: left;  */
+}
+
+/* free delivery islandwide-----------Font awsome----paragraph------- */
+.delivery-content p{
+    color:#000;
+    word-spacing: 0.3em;
+    font-family: monserrate;
+}
+
+.delivery-payment p{
+    color:#000;
+    word-spacing: 0.3em;
+    font-family: monserrate;
+}
+/* -------------Apply setting to all 4 cards ------------- */
+.delivery-payment{
+    min-height: 18em;
+    /* Shadow setting */
+    background: linear-gradient(145deg, #9de6da, #baffff);
+    box-shadow:  29px 29px 58px #90d4c9, 
+                 0px -20px 58px #ccffff;                
+}
+
+/* -------------------------------(footer)------------------------ */
+
+.address{
+    box-shadow: var(--shadow);
+    /* background-image: linear-gradient(to bottom, #4cffc5, #49ffcd, #48ffd5, #49ffdc, #4cffe3); */
+
+}
+.footer-container{ 
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    /* background-image: linear-gradient(to top, #ff4c68, #ff617f, #ff7495, #ff87a8, #ff99ba); */
+    /* background-image:  var(--gradient-color); */
+}
+
+.address p{
+    color: var(--primary-color);
+    font-size: 1em;
+}
+
+/* ------it allows elements to set side by side */
+.footer-container a{
+    /* display: inline-block; */
+    color: #000;
+    
+}
+.footer-container p{
+    font-size: 0.9em;
+    color: var(--base-color);
+}
+
+/* ----------form-----Background-image cover 100%, form cover 50% ----------------- */
+
+.form-bgImg-1{
+ 
+    background-image: url("../images/opinionMatter_words-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: var(--shadow);
+    /* min-height:400px;  */
+} 
+
+/* ------------------(form)---Contact form----------------------------------------------- */
+form{
+    background-color: var(--base-color);
+   opacity: 0.9; 
+}
+
+input[type="text"], input[type="email"], input[type="tel"], option, select{
+    font-family: monserrate;
+}
+  
+ form label, form textarea{      
+        font-family: monserrate;
+        font-size: 1.1em;        
+    } 
+
+
+/* ----------------------------Location Map----------------------------- */
+
+#map-wrapper{
+     /* height is a must for img to appear */
+    min-height: 580px;   
+}
+.map{
+    background-image: url("../images/Map.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity:0.9;
+    height: 580px;
+}
+
+.map-cellphone-img{
+    background-image:url("../images/Screenshot 2020-11-10 211034.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:top;      
+    height: 550px;
+/* no effect in large viewport it's for gap inbetween item in small viewport when stackup*/  
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/* Next Page-------------------------(Testimonial Page)------------------------------------*/
+.title-wrapper{
+  overflow: hidden;  /* for testimonial h1 header transform rotation */
+ 
+}
+.title{
+    /* background-image: linear-gradient(to right, #ff4c68, #ff768c, #fb99ac, #f3bac8, #e8dade);     */
+    background-image: var(--gradient-color);
+    /* background-color: var(--primary-color); */
+    /* box-shadow: var(--bgColor); */
+    width:120%;
+    margin-left:-5%;  /* to extend beyond pg & container set overflow: hidden */
+    transform: rotate(4deg); /* slant a header */
+    top:-5%;/* moveUp negative for slant effect */
+    left: -5%;
+    margin-bottom:-4%; /* flush header bottom wif photo frame */
+    /* added to mediaQ */
+    /* height: 230px; */
+    box-shadow: var(--shadow);
+}
+
+.title h1{
+    font-family: 'Montserrat', sans-serif;
+   
+    /* fontSize added to mediaQ */
+    /* font-size:3em; */
+    letter-spacing: 0.2em;
+
+    text-shadow: 0 0 1.8px gray;
+    text-shadow: var(--text-Shadow);
+    color: ghostwhite; 
+    
+    /* create top & bottom border for title */
+    /* border-top: 1px solid var(--button-hover); */
+    /* border-bottom: 2px double var(--button-hover);  */
+    
+    /* box-shadow:var(--shadow); */
+    border-radius:8px;
+    margin: 7% 0 0 -5%;
+    transform:rotate(-4deg);   
+}
+.review-bg{
+    background-image: url("../images/reviewpg-BG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+   opacity: 0.9;      
+}
+
+.review2-content{
+    background-color:var(--base-color);
+    font-size: 0.9em;
+    /* prevent bottom border lift up exposing bg-img */
+    min-height: 20em;
+}
+.review2-content p{
+    color:#000
+}
+
+
+/* --------------------------------Gallery Page Start--------------------- */
+
+
+.gallery-img{
+    background-image: url("../images/gallery-header-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: var(--shadow);     
+}
+
+.gallery-title h1{
+    letter-spacing: 0.05em;
+    word-spacing: 0.4em;
+    text-shadow: var(--text-Shadow);
+    color:var(--primary-color);
+    opacity:0.6;
+ 
+    }
+
+/* ----------------------------------------Chef Section------------ */
+
+.carousel-indicators .active{
+    background-color: var(--primary-color);
+}
+
+/* inactive indicator color */
+.carousel-indicators li{
+    background-color: var(--button-hover);
+}
+
+.chef-container{
+    box-shadow: var(--shadow);
+    background: var(--base-color);
+}
+
+.chef-title{
+    box-shadow: var(--shadow);
+    background-color: var(--base-color); 
+}
+
+.chef-title h2{
+    font-family: monserrat;
+    letter-spacing: 0.1em;
+    word-spacing: 0.4em;
+    text-shadow: var(--text-Shadow);
+    opacity:0.9;    
+}
+
+.chef-title blockquote{
+    font-family: ubuntus;
+    letter-spacing: 0.08em;
+    word-spacing: 0.3em;
+    opacity:0.6;
+    
+}
+.chef-title blockquote:first-letter{
+    font-size:180%;
+}
+
+/* reduce image size */
+.chef-img-wrapper{
+    width:40%;
+}
+
+img.chef-img{
+    width:60%;
+    /* offset no centered image   */
+    margin-left:20%; 
+}
+
+/* fontawsome icon */
+.chef-text-content a{
+    font-size:0.8em;
+    color: #000000;
+}
+
+
+.chef-text-content{
+    border-top:3px double gainsboro;
+    opacity:0.7;
+}
+.chef-text-content h3{ 
+    font-family: monserrat;
+    color:var(--primary-color);
+    font-size:2em;
+}
+
+.chef-text-content p{
+    font-family: monserrat;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+
+/* ----------------------------------------Chef Section-------End----- */
+
+.gallery-wrapper{
+    box-shadow: var(--shadow);
+    background-color: var(--primary-color);
+}
+
+
+.gallery-wrapper p{
+    color:var(--base-color);
+}
+
+/* -------------(Media Queries)--------------------------------------------------------------- */
+/* --------------------------M2000------(Media Query HOME page)--------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+@media (max-width:2000px){
+
+
+    /* --------------------Testimonial grid---------------- */
+    .title{
+        height: 230px;
+    }
+    .title h1{
+        font-size:3.5em;
+    }
+
+    
+    .gallery-title h1{
+        font-size:3.5em;
+    }
+    .chef-title h2{
+        font-size:3em;
+    }
+    
+/* ------------------------M1300-------------------------------- */
+@media (max-width:1300px){
+
+    /* Home page - showcase */
+
+       .review-content{
+            min-height: 23em;
+       }
+
+       .review-content h2{
+        font-size: 1.8em;
+       }
+
+       .review-content p{
+        font-size: 0.9em;
+       }
+
+
+       .delivery-payment{
+         min-height:12em;
+       }
+
+      .delivery-payment h5{
+        font-size:1em;
+ 
+      } 
+
+      .delivery-payment p{
+        font-size: 0.8em;
+    
+      } 
+
+    /* gallery slant header reduced height */
+    .title{
+        height:180px;
+    } 
+    .gallery-wrapper p{
+        font-size: 0.8em;
+    }
+}
+
+/* ------------------------M800-------------------------------- */
+/*previous set 725px */
+@media(max-width: 800px){
+
+       
+       .showcase-img h1{
+           font-size: 3em;
+        }
+        
+    .showcase-img p{
+        font-size: 1em;
+    }
+
+    .review-content{
+        min-height: 18em;
+   }
+
+   .review-content h2{
+    font-size: 2em;
+   }
+
+   .review-content p{
+    font-size: 1em;
+   }
+/* ---------delivery-header--Home page-----2nd half------ */
+.delivery-blockquote h3{
+    font-size:1em;
+}
+
+
+.delivery-content h2{
+    font-size:1.2em;
+}
+.delivery-order h3{
+    font-size:1.3em;
+}
+
+/* 4 cards at the end of home page */
+.delivery-payment h5{
+  font-size:1.2em;
+}
+
+.card-i-img{
+    min-height: 15em; 
+}
+
+/* -------cellphone & map display stacking---------- */
+
+
+    /* -----------------gallery---------------- */
+    /* reduce slant header height */
+    .title{
+        height: 160px;
+    }
+
+    .gallery-title h1{
+        font-size:2em;
+    }
+    .chef-title h2{
+        font-size:2.5em;
+
+    }
+
+/* ------------------------M700-------------------------------- */
+@media (max-width: 700px){
+    /* * -----------home page ---------------- */
+
+
+/* ----------Gallery------ */
+.review2-content{
+    /* reduce the card height */
+    min-height: 16em;
+}
+
+/* --------------gallery-wrapper------------------------ */
+.gallery-wrapper p{
+    font-size: 1.1em;
+}
+     /* reduce slant header height */
+    .title{
+        height:150px;
+    }
+    .title h1{
+        font-size:2.3em;
+    }
+
+    .gallery-title h1{
+        font-size:1.5em;
+    }
+
+    .showcase-img h1{
+        font-size: 1em;
+    }
+
+    .address p{
+        color: var(--primary-color);
+        font-size: 0.8em;
+    }
+
+/* social media icon reduced size */
+.footer-container p, .footer-container a{
+    font-size:0.8em;
+    }
+}
+
+/* ------------------------M500-------------------------------- */
+@media (max-width:550px){
+
+/* home page */
+.showcase-textContent h1{
+    font-size:1.7em;
+}
+
+/* contact page -------form------ */
+/* ---------delivery-header--Home page-----2nd half------ */
+
+.delivery-content h2{
+    font-size:1em;
+}
+
+.delivery-order h3{
+    font-size:1.1em;
+}
+
+.delivery-payment h5{
+    font-size:1.4em;
+  }
+  
+  .delivery-payment p{
+      font-size:1.1em;
+    }
+  
+.title{
+    
+    height: 100px;
+}
+.title h1{
+    font-size:2em;
+}
+
+.review-content p{
+    font-size: 0.9em;
+}
+
+    .chef-title h2{
+        font-size:2em;
+    }
+
+.gallery-wrapper p{
+    font-size: 1em;
+}   
+.address p{
+    color: var(--primary-color);
+    font-size: 0.7em;
+}
+
+.footer-container p{
+
+    font-size: 0.7em;   
+    }
+}}}
