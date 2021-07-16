@@ -38,14 +38,13 @@ img{
 }
 
 body{
-    margin-left: 3%;
-    margin-right:3%;
-
+    /* margin-left: 3%;
+    margin-right:3%; */
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif, Helvetica;
     font-size: 16px;
     /* max-width: 1024px;  */
-    width: 98%;
+    /* width: 100%; */
     background-color:var(--bgColor); 
     box-shadow: var(--shadow); 
      /* box-sizing: border-box; */
@@ -393,7 +392,8 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
     /* box-shadow:var(--shadow); */
     border-radius:8px;
     margin: 7% 0 0 -5%;
-    transform:rotate(-4deg);   
+    transform:rotate(-4deg);  
+    
 }
 .review-bg{
     background-image: url("../images/reviewpg-BG.jpg");
@@ -725,7 +725,7 @@ img.chef-img{
     height: 100px;
 }
 .title h1{
-    font-size:2em;
+    font-size:1.5em;
 }
 
 .review-content p{
