@@ -32,19 +32,20 @@ img{
 }
 
 .btn{
+    display:inline-block;
     font-family: monserrate;
-    font-weight: bolder;
+    width:10em;
 }
 
 body{
-    margin-left: 5%;
-    margin-right:5%;
+    margin-left: 3%;
+    margin-right:3%;
 
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif, Helvetica;
     font-size: 16px;
     /* max-width: 1024px;  */
-    width: 80%;
+    width: 98%;
     background-color:var(--bgColor); 
     box-shadow: var(--shadow); 
      /* box-sizing: border-box; */
@@ -129,7 +130,6 @@ background-color: #a52a2a;
 .showcase-textContent{
     position: relative;
     top: 120px;
-    left: 30px;
 } 
 
 
@@ -696,7 +696,11 @@ img.chef-img{
 .showcase-textContent h1{
     font-size:1.7em;
 }
-
+.openHr-container{
+    /* background-color: var(--base-color);
+    box-shadow: var(--shadow); */
+    width: 100%;
+}
 /* contact page -------form------ */
 /* ---------delivery-header--Home page-----2nd half------ */
 
