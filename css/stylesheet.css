@@ -38,26 +38,14 @@ img{
 }
 
 body{
-    /* margin-left: 3%;
-    margin-right:3%; */
+
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif, Helvetica;
     font-size: 16px;
     /* max-width: 1024px;  */
-    /* width: 100%; */
     background-color:var(--bgColor); 
     box-shadow: var(--shadow); 
      /* box-sizing: border-box; */
-}
-
-
-.container-fluid{
-/*   
-    margin-left: 5%;
-    margin-right:5%; */
-    padding-left: 5%;
-    padding-right: 5%;  
-
 }
 
 /* -------------------color theme for HTML content page------------------------ */
@@ -725,7 +713,7 @@ img.chef-img{
     height: 100px;
 }
 .title h1{
-    font-size:1.5em;
+    font-size:1em;
 }
 
 .review-content p{
