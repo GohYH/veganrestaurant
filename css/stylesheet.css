@@ -345,7 +345,6 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
 /* Next Page-------------------------(Testimonial Page)------------------------------------*/
 .title-wrapper{
   overflow: hidden;  /* for testimonial h1 header transform rotation */
- 
 }
 .title{
     /* background-image: linear-gradient(to right, #ff4c68, #ff768c, #fb99ac, #f3bac8, #e8dade);     */
@@ -353,7 +352,8 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
     /* background-color: var(--primary-color); */
     /* box-shadow: var(--bgColor); */
     width:120%;
-    margin-left:-5%;  /* to extend beyond pg & container set overflow: hidden */
+    /* margin-left:-5%;  to extend beyond pg & container set overflow: hidden */
+    margin-left:-18%;  /* to extend beyond pg & container set overflow: hidden */
     transform: rotate(4deg); /* slant a header */
     top:-5%;/* moveUp negative for slant effect */
     left: -5%;
@@ -380,9 +380,8 @@ input[type="text"], input[type="email"], input[type="tel"], option, select{
     
     /* box-shadow:var(--shadow); */
     border-radius:8px;
-    margin: 7% 0 0 -5%;
+    margin: 5% 0 0 12%;
     transform:rotate(-4deg);  
-    
 }
 .review-bg{
     background-image: url("../images/reviewpg-BG.jpg");
