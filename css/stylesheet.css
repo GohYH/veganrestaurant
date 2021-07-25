@@ -101,6 +101,10 @@ background-color: #a52a2a;
     background-color: var(--primary-color);
 
 }
+.container-width{
+    width:80%;
+    margin: 0 auto;
+}
 
 /* --------------showcase -------------- */
 .showcase-img{   
@@ -566,7 +570,11 @@ img.chef-img{
     /* gallery slant header reduced height */
     .title{
         height:180px;
+      
     } 
+    .title h1{
+        font-size:2em;
+    }
     .gallery-wrapper p{
         font-size: 0.8em;
     }
@@ -576,7 +584,6 @@ img.chef-img{
 /*previous set 725px */
 @media(max-width: 800px){
 
-       
        .showcase-img h1{
            font-size: 3em;
         }
@@ -679,6 +686,11 @@ img.chef-img{
 
 /* ------------------------M500-------------------------------- */
 @media (max-width:550px){
+
+/* home page and gallery  */
+.container-width{
+        width:100%;
+    }
 
 /* home page */
 .showcase-textContent h1{
